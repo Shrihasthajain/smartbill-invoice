@@ -1,0 +1,154 @@
+/* =====================
+   Dashboard.css
+   ===================== */
+
+.dashboard-wrapper {
+  padding: 8px 0;
+}
+
+.dashboard-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1a1a2e;
+}
+
+.dashboard-subtitle {
+  color: #6b7280;
+  margin-bottom: 28px;
+  font-size: 14px;
+}
+
+/* Stat Cards */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.stat-card-green { border-top: 4px solid #2E7D32; }
+.stat-card-blue  { border-top: 4px solid #1565C0; }
+
+.stat-label {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.stat-value-green { color: #2E7D32; }
+.stat-value-blue  { color: #1565C0; }
+
+/* Invoice Table Card */
+.table-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.table-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.invoice-table thead tr {
+  background: #E8F5E9;
+}
+
+.invoice-table thead th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #2E7D32;
+  border-bottom: 2px solid #C8E6C9;
+  white-space: nowrap;
+}
+
+.invoice-table tbody tr {
+  transition: background 0.2s;
+}
+
+.invoice-table tbody tr:hover {
+  background: #F1F8E9 !important;
+}
+
+.invoice-table tbody tr.even { background: #fff; }
+.invoice-table tbody tr.odd  { background: #fafafa; }
+
+.invoice-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.td-invoice-number {
+  font-weight: 600;
+  color: #2E7D32;
+}
+
+.td-date   { color: #6b7280; }
+.td-total  { font-weight: 700; }
+
+.pdf-btn {
+  background: #2E7D32;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.pdf-btn:hover {
+  background: #1B5E20;
+  transform: translateY(-1px);
+}
+
+/* Empty / Loading states */
+.table-empty {
+  color: #6b7280;
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-title { font-size: 20px; }
+  .stat-grid       { grid-template-columns: 1fr 1fr; }
+  .stat-value      { font-size: 22px; }
+  .table-card      { padding: 16px; }
+  .invoice-table   { font-size: 12px; }
+  .invoice-table thead th,
+  .invoice-table td { padding: 10px 10px; }
+}
+
+@media (max-width: 480px) {
+  .stat-grid { grid-template-columns: 1fr; }
+}
