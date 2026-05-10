@@ -71,7 +71,7 @@ smartbill-invoice/
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 - Node.js installed
@@ -117,7 +117,7 @@ App opens at: **http://localhost:3000**
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Items
 | Method | Endpoint | Description |
@@ -160,8 +160,6 @@ Row Total     = After Discount + GST Amount
 - Terms & Conditions
 
 ---
-
-## Screenshots
 
 ### Dashboard
 > View all invoices with invoice number, customer name, date, grand total, and PDF download button.
